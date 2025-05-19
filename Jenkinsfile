@@ -39,7 +39,7 @@ pipeline {
             }
     stage("Test"){
     steps{
-            script{
+        script{
                 sh """
                 echo "Hello, this is Test"
                 """
@@ -66,8 +66,8 @@ pipeline {
                 }
             }
         }
-    }
-    stage('Parallel Stages') {
+
+        stage('Parallel Stages') {
             parallel {
                 stage('STAGE-1') {
                     
@@ -93,7 +93,7 @@ pipeline {
                 }
             }
         }
-    
+}
     post { 
     always { 
         echo 'I will always say Hello again!'
