@@ -56,7 +56,7 @@ pipeline {
                 }
             } 
             when { 
-                environment name: 'DEPLOY_TO', value: 'QA'
+                environment name: 'DEPLOY_TO', value: 'production'
             }
         steps{
             script{
